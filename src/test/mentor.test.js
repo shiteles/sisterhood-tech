@@ -42,7 +42,7 @@ describe("API test", () => {
                 return done();
             });
     });
-    /*
+    /* in progress
         test("Rota GET - Filter by id", (done) => {
             request(app)
                 .get(`/sisterhoodtech/mentor/${mentorID}`)
