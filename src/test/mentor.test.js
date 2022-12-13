@@ -1,7 +1,7 @@
 const request = require("supertest");
 const app = require("../app")
 
-let mentorID;
+let elementId;
 
 describe("API test", () => {
 
@@ -38,11 +38,27 @@ describe("API test", () => {
             .expect(201)
             .end((err, res) => {
                 if (err) return done(err);
-                mentorID = res.body.id;
+                elementId = res.body.id;
                 return done();
             });
     });
-    /* in progress
+
+    test("Route GET - Filter by mentor name", (done) => {
+        request(app)
+            .get("/sisterhoodtech/mentor?mentorName=")
+            .expect(200)
+            .expect((res) => {
+                expect(res.body.mentorName).not.toBe(0);
+            })
+            .end((err, res) => {
+                if (err) return done(err);
+                return done();
+            })
+    });
+
+/*
+in progress - falhando no momento
+
         test("Rota GET - Filter by id", (done) => {
             request(app)
                 .get(`/sisterhoodtech/mentor/${mentorID}`)
@@ -71,20 +87,8 @@ describe("API test", () => {
                 });
         });
 
-    test("Route GET - Filter by mentor name", (done) => {
-        request(app)
-            .get("/sisterhoodtech/mentor?mentorName=")
-            .expect(200)
-            .expect((res) => {
-                expect(res.body.mentorName).not.toBe(0);
-            })
-            .end((err, res) => {
-                if (err) return done(err);
-                return done();
-            })
-    });
 
-    test("Route DELETE mentor by ID", (done) => {
+ test("Route DELETE mentor by ID", (done) => {
         request(app)
             .delete(`/sisterhoodtech/mentor/delete/${mentorID}`)
             .expect("Content-Type", /json/)
@@ -97,6 +101,8 @@ describe("API test", () => {
                 if (err) return done(err)
                 return done()
             })
-    })*/
+    })
+*/
+
 
 })
