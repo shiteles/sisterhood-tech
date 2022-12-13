@@ -32,13 +32,13 @@ describe("API test", () => {
                 githubPage: "https://github.com/jana",
                 linkedinPage: "https://www.linkedin.com/in/jana/",
                 workHistory: ["Project Manager - Empresa X"],
-                personalDescription: "Mulher, mãe e profissional na área da tecnologia",
+                personalDescription: "Descrição com resumo da vida da vida, expêriencias e o que a mentora achar relevante",
                 match: true
             })
             .expect(201)
             .end((err, res) => {
                 if (err) return done(err);
-                elementId = res.body.id;
+                elementId = res.body.savedMentor._id;
                 return done();
             });
     });
@@ -56,45 +56,61 @@ describe("API test", () => {
             })
     });
 
-/*
-in progress - falhando no momento
+    test("Route POST - Mentor Login", (done) => {
+        request(app)
+        .post("/sisterhoodtech/mentor/login")
+        .send({
+            email: "jana@email.com",
+            password: "senhajana"
+        })
+        .expect((res) => {
+            token = res.body.token;
+          })    
+        .expect(200)
+        .end((err, res) => {
+            if (err) return done(err);
+            return done();
+          
+        })
+    })
 
-        test("Rota GET - Filter by id", (done) => {
-            request(app)
-                .get(`/sisterhoodtech/mentor/${elementId}`)
-                .expect(200)
-                .expect((res) => {
-                    expect(res.body.id).not.toBe(0);
-                })
-                .end((err, res) => {
-                    if (err) return done(err);
-                    return done();
-                });
-        });
-    
-        test("Route PATCH - Register a new mentor", (done) => {
-            request(app)
-                .patch(`/sisterhoodtech/mentor/${elementId}`)
-                .expect("Content-Type", /json/)
-                .send({
-                    languagesAndTechnologies: ["Salesforce", "Java", "SQL", "CSS", "Scrum"]
-                })
-                .expect(200)
-                .end((err, res) => {
-                    expect(res.json).toBe(`Mentor successfully updated`);
-                    if (err) return done(err);
-                    return done();
-                });
-        });
+    test("Rota GET - Filter by id", (done) => {
+        request(app)
+            .get(`/sisterhoodtech/mentor/${elementId}`)
+            .set("Authorization", `Bearer ${token}`)
+            .expect(200)
+            .expect((res) => {
+                expect(res.body.id).not.toBe(0);
+            })
+            .end((err, res) => {
+                if (err) return done(err);
+                return done();
+            });
+    });
 
+    test("Route PATCH - Update a mentor", (done) => {
+        request(app)
+            .patch(`/sisterhoodtech/mentor/${elementId}`)
+            .set("Authorization", `Bearer ${token}`)
+            .expect("Content-Type", /json/)
+            .send({
+                githubPage: "https://github.com/janainateste"
+            })
+            .expect(200)
+            .end((err, res) => {
+               
+                if (err) return done(err);
+                return done();
+            });
+    });
 
- test("Route DELETE mentor by ID", (done) => {
+    test("Route DELETE mentor by Id", (done) => {
         request(app)
             .delete(`/sisterhoodtech/mentor/delete/${elementId}`)
+            .set("Authorization", `Bearer ${token}`)
             .expect("Content-Type", /json/)
             .expect(200)
             .expect((res) => {
-                console.log(res.body)
                 expect(res.body.findMentor.email).toBe("jana@email.com");
             })
             .end((err, res) => {
@@ -102,7 +118,5 @@ in progress - falhando no momento
                 return done()
             })
     })
-*/
-
 
 })
