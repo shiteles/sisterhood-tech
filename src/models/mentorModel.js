@@ -55,8 +55,8 @@ const mentorSchema = new mongoose.Schema(
         },
         match: {
             type: Boolean,
-            required: true
-        },
+            required: true,
+        }
     },
     {
         timestamps: true
