@@ -61,7 +61,7 @@ in progress - falhando no momento
 
         test("Rota GET - Filter by id", (done) => {
             request(app)
-                .get(`/sisterhoodtech/mentor/${mentorID}`)
+                .get(`/sisterhoodtech/mentor/${elementId}`)
                 .expect(200)
                 .expect((res) => {
                     expect(res.body.id).not.toBe(0);
@@ -74,7 +74,7 @@ in progress - falhando no momento
     
         test("Route PATCH - Register a new mentor", (done) => {
             request(app)
-                .patch(`/sisterhoodtech/mentor/${mentorID}`)
+                .patch(`/sisterhoodtech/mentor/${elementId}`)
                 .expect("Content-Type", /json/)
                 .send({
                     languagesAndTechnologies: ["Salesforce", "Java", "SQL", "CSS", "Scrum"]
@@ -90,7 +90,7 @@ in progress - falhando no momento
 
  test("Route DELETE mentor by ID", (done) => {
         request(app)
-            .delete(`/sisterhoodtech/mentor/delete/${mentorID}`)
+            .delete(`/sisterhoodtech/mentor/delete/${elementId}`)
             .expect("Content-Type", /json/)
             .expect(200)
             .expect((res) => {
