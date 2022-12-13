@@ -33,7 +33,7 @@ describe("API test", () => {
                 githubPage: "https://github.com/shiteles",
                 linkedinPage: "https://www.linkedin.com/in/shirleneteles/",
                 workHistory: ["Operadora de audio - Tv Thati", "Atendimento ao cliente - Icarus Net"],
-                goal:"Transição de carreira",
+                goal: "Transição de carreira",
                 personalDescription: "Descrição com resumo da vida da vida, expêriencias e o que a mentorada achar relevante",
                 match: true,
                 mentorId: idMentorMock
@@ -61,20 +61,20 @@ describe("API test", () => {
 
     test("Route POST - Mentee Login", (done) => {
         request(app)
-        .post("/sisterhoodtech/mentee/login")
-        .send({
-            email: "shi@email.com",
-            password: "senhashi"
-        })
-        .expect((res) => {
-            token = res.body.token;
-          })    
-        .expect(200)
-        .end((err, res) => {
-            if (err) return done(err);
-            return done();
-          
-        })
+            .post("/sisterhoodtech/mentee/login")
+            .send({
+                email: "shi@email.com",
+                password: "senhashi"
+            })
+            .expect((res) => {
+                token = res.body.token;
+            })
+            .expect(200)
+            .end((err, res) => {
+                if (err) return done(err);
+                return done();
+
+            })
     })
 
     test("Rota GET - Filter by id", (done) => {
@@ -97,12 +97,12 @@ describe("API test", () => {
             .set("Authorization", `Bearer ${token}`)
             .expect("Content-Type", /json/)
             .send({
-                languagesAndTechnologies: ["Javascript", "NodeJS", "NoSQL","CSS","GIT"],
-                goal:"Vaga na area da tecnologia como junior ou estagiaria",
+                languagesAndTechnologies: ["Javascript", "NodeJS", "NoSQL", "CSS", "GIT"],
+                goal: "Vaga na area da tecnologia como junior ou estagiaria",
             })
             .expect(200)
             .end((err, res) => {
-               
+
                 if (err) return done(err);
                 return done();
             });
@@ -122,6 +122,6 @@ describe("API test", () => {
                 return done()
             })
     })
-    
+
 
 })
