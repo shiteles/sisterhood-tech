@@ -6,7 +6,7 @@ const bcrypt = require("bcrypt");
 
 const findAllMentors = async (req, res) => {
     try {
-        const allMentors = await mentorModel.find();
+        const allMentors = await mentorModel.find().select("mentorName age languagesAndTechnologies githubPage linkedinPage workHistory goal personalDescription");
         res.status(200).send(allMentors);
 
     } catch (error) {
@@ -16,7 +16,7 @@ const findAllMentors = async (req, res) => {
 
 const findMentorById = async (req, res) => {
     try {
-        const findMentor = await mentorModel.findById(req.params.id);
+        const findMentor = await mentorModel.findById(req.params.id).select("mentorName age languagesAndTechnologies githubPage linkedinPage workHistory goal personalDescription");
         res.status(200).json(findMentor)
     } catch (error) {
         res.status(500).json({ message: error.message })
@@ -29,7 +29,7 @@ const findMentorByName = async (req, res) => {
 
         const findMentor = await mentorModel.find({
             mentorName: { $regex: nameRequest, $options: "i" },
-        });
+        }).select("mentorName age languagesAndTechnologies githubPage linkedinPage workHistory goal personalDescription");
 
         if (findMentor.length > 0) {
             res.status(200).json(findMentor);
