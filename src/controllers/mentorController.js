@@ -45,7 +45,7 @@ const createNewMentor = async (req, res) => {
     try {
         const passwordwithHash = bcrypt.hashSync(req.body.password, 10)
         req.body.password = passwordwithHash
-        
+
         const {
             mentorName,
             age,
@@ -140,45 +140,45 @@ const deleteMentorById = async (req, res) => {
     };
 };
 
-function mentorAuthentication(req,res,next){
+function mentorAuthentication(req, res, next) {
     const authHeader = req.get("authorization");
     const token = authHeader.split(" ")[1];
-    
+
     if (!token) {
-      return res.status(401).send({ message: "The token is invalid" });
+        return res.status(401).send({ message: "The token is invalid" });
     }
 
-    try{
-    jwt.verify(token, SECRET)
+    try {
+        jwt.verify(token, SECRET)
 
-    next();
+        next();
 
-  } catch (error) {
-    res.status(400).send({ message: "Access denied! No authorization" });
-  } 
+    } catch (error) {
+        res.status(400).send({ message: "Access denied! No authorization" });
+    }
 }
 
 const loginMentor = (req, res) => {
-    try{
-      mentorModel.findOne({email: req.body.email}, function(error, mentor){
-        if(!mentor){
-          return res.status(404).send(`Mentor ${req.body.mentorName} not found`)
-        }
-    
-        const validpassword = bcrypt.compareSync(req.body.password, mentor.password)
-  
-        if(!validpassword){
-          return res.status(403).send("Wrong password! Please try again.")
-        }
-  
-        const token = jwt.sign({ email: req.body.email }, SECRET);
-        res.status(200).send({ message: "Successfully authenticated",token })
-      })
-  
-    }catch(error){
-      res.status(500).send({message: error.message});
+    try {
+        mentorModel.findOne({ email: req.body.email }, function (error, mentor) {
+            if (!mentor) {
+                return res.status(404).send(`Mentor ${req.body.mentorName} not found`)
+            }
+
+            const validpassword = bcrypt.compareSync(req.body.password, mentor.password)
+
+            if (!validpassword) {
+                return res.status(403).send("Wrong password! Please try again.")
+            }
+
+            const token = jwt.sign({ email: req.body.email }, SECRET);
+            res.status(200).send({ message: "Successfully authenticated", token })
+        })
+
+    } catch (error) {
+        res.status(500).send({ message: error.message });
     }
-  }
+}
 
 module.exports = {
     findAllMentors,
