@@ -17,7 +17,7 @@
 
 <br>
 
-O projeto tem como objetivo conectar mulheres da tecnologia que estão iniciando na carreira com mulheres que já tem uma vivência e desejam compartilhar conhecimento e de alguma forma instruir e ajudar iniciantes.
+O projeto tem como objetivo conectar mulheres da tecnologia que estão iniciando na carreira com mulheres que já tem uma vivência e desejam compartilhar conhecimento e de alguma forma instruir e ajudar iniciantes.<br>
 A intenção é fazer essa ligação entre mulheres e mostrar que não estamos sozinhas e que podemos nos fortalecer e criar laços de empoderamento e fortalecimento para diminuir a lacuna de gênero na área tech.
 <br>
 <br>
@@ -111,8 +111,13 @@ $ git clone https://github.com/shiteles/sisterhood-tech
 # Entrar na pasta do repositório
 $ cd sisterhood-tech
 
+# Para criar um arquivo insira o comando abaixo no terminal
+$ touch .env 
+# Para preencher utilize o arquivo .env.example como modelo
+
 # Instalar as dependências
 $ npm install
+$ npm install dotenv --save
 
 # Executar o servidor
 $ npm start
