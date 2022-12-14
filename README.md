@@ -123,6 +123,14 @@ $ npm install dotenv --save
 $ npm start
 ```
 <br>
+
+---
+## :books: Documentação da API
+<br>
+
+:memo: [Swagger](https://sisterhood-tech.onrender.com/my-documentation-route/)
+:rocket: [Render](https://sisterhood-tech.onrender.com)
+
 ---
 ## 🔐 Testando Rotas de Login e Rotas Com ou Sem Proteção
 
