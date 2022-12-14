@@ -10,6 +10,15 @@
 </h1>
 
 ## <b> Projeto de conclusão do curso de Desenvolvimento Backend - Todas em Tech | Turma On19 da [{Reprograma}](https://www.reprograma.com.br/) </b> :purple_heart:
+---
+## :dart: Objetivo 
+
+<br>
+
+O projeto tem como objetivo conectar mulheres da tecnologia que estão iniciando na carreira com mulheres que já tem uma vivência e desejam compartilhar conhecimento e de alguma forma instruir e ajudar iniciantes.
+A intenção é fazer essa ligação entre mulheres e mostrar que não estamos sozinhas e que podemos nos fortalecer e criar laços de empoderamento e fortalecimento para diminuir a lacuna de gênero na área tech.
+<br>
+<br>
 
 ---
 
@@ -88,3 +97,69 @@
 | `swagger`| Gera a documentação do projeto.|
 | `Render`| Utilizado para realizar o deploy da aplicação e hospedar documentação.|
 ---
+
+## :construction_worker: Instalação
+
+<br>
+
+```ps
+# Clonar o repositório
+$ git clone https://github.com/shiteles/sisterhood-tech
+
+# Entrar na pasta do repositório
+$ cd sisterhood-tech
+
+# Instalar as dependências
+$ npm install
+
+# Executar o servidor
+$ npm start
+```
+<br>
+---
+## 🔐 Testando Rotas de Login e Rotas Com ou Sem Proteção
+
+<br>
+
+ 🛣️ Todas as rotas existentes neste projeto:
+
+- Mentee
+
+| Verbo  |   EndPoint                         |        Descrição da Rota                | Status | Auth |
+|--------|------------------------------------|-----------------------------------------|--------|------|
+| GET    | /sisterhoodtech/mentee/all         | Listar todas as mentoradas              |   200  |  ❌  |
+| GET    | /sisterhoodtech/mentee/:id         | Filtrar mentorada por id                |   200  |  ✔️  |
+| GET    | /sisterhoodtech/mentee/            | Filtrar mentorada por nome              |   200  |  ❌  |
+| POST   | /sisterhoodtech/mentee/add         | Adicionar uma nova mentorada            |   201  |  ❌  |
+| POST   | /sisterhoodtech/mentee/login       | Devolve o token da mentorada            |   200  |  ❌  |
+| PATCH  | /sisterhoodtech/mentee/:id         | Altera as informações de uma mentorada  |   200  |  ✔️  |
+| DELETE | /sisterhoodtech/mentee/delete/:id  | Remove uma mentorada                    |   200  |  ✔️  |
+
+- Mentor
+
+| Verbo  |   EndPoint                         |        Descrição da Rota                | Status | Auth |
+|--------|------------------------------------|-----------------------------------------|--------|------|
+| GET    | /sisterhoodtech/mentor/all         | Listar todas as mentoras                |   200  |  ❌  |
+| GET    | /sisterhoodtech/mentor/:id         | Filtrar mentora por id                  |   200  |  ✔️  |
+| GET    | /sisterhoodtech/mentor/            | Filtrar mentora por nome                |   200  |  ❌  |
+| POST   | /sisterhoodtech/mentor/add         | Adicionar uma nova mentora              |   201  |  ❌  |
+| POST   | /sisterhoodtech/mentor/login       | Devolve o token da mentora              |   200  |  ❌  |
+| PATCH  | /sisterhoodtech/mentor/:id         | Altera as informações de uma mentora    |   200  |  ✔️  |
+| DELETE | /sisterhoodtech/mentor/delete/:id  | Remove uma mentora                      |   200  |  ✔️  |
+<br>
+
+ :lock: **PROTEÇÃO** Para testar via Postman, é necesário realizar login para ter acesso ao token e passar no header para autenticação.
+
+
+---
+## :test_tube: Teste Jest
+
+</br>
+
+:arrow_heading_up: Instalar o Jest dentro da pasta Sisterhood-Tech
+
+- Inicialize o comando de instalação do Jest `npm install --save-exact jest@28.1.0 --save-dev`
+- Incluir o script no package_json  `"test": "jest --watchAll"`.
+- Inicialize com o comando `npm run test` para testar.
+
+<br>
