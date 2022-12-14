@@ -1,13 +1,15 @@
+<h1 align="center">
+    <br>
+    <p align="center"> Projeto Final {Reprograma} - Sisterhood Tech 👭:computer: <p>
+</h1>
+
 <br />
 <p align="center"> <img src="https://github.com/shiteles/sisterhood-tech/blob/main/material/SISTERHOOD%20TECH.gif"  width ="50%"> </p>
 <br />
 
 <br>
-<br>
-<h1 align="center">
-    <br>
-    <p align="center"> Projeto Final {Reprograma} - Sisterhood Tech 👭:computer: <p>
-</h1>
+
+
 
 ## <b> Projeto de conclusão do curso de Desenvolvimento Backend - Todas em Tech | Turma On19 da [{Reprograma}](https://www.reprograma.com.br/) </b> :purple_heart:
 ---
