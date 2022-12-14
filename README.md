@@ -9,7 +9,9 @@
     <p align="center"> Projeto Final {Reprograma} - Sisterhood Tech 👭:computer: <p>
 </h1>
 
-### <b> Projeto de conclusão do curso de Desenvolvimento Backend - Todas em Tech | Turma On19 da [{Reprograma}](https://www.reprograma.com.br/) </b> :purple_heart:
+## <b> Projeto de conclusão do curso de Desenvolvimento Backend - Todas em Tech | Turma On19 da [{Reprograma}](https://www.reprograma.com.br/) </b> :purple_heart:
+
+---
 
 
 ## 📁 Arquitetura do Projeto
@@ -61,10 +63,9 @@
    |- 📄 swagger.js
 
 ```
-
-<br>
 <br>
 
+---
 ## :floppy_disk: Tecnologias e Dependências Utilizadas
 
 <br>
@@ -86,3 +87,4 @@
 | `jest`| Jest é uma estrutura de teste JavaScript.|
 | `swagger`| Gera a documentação do projeto.|
 | `Render`| Utilizado para realizar o deploy da aplicação e hospedar documentação.|
+---
