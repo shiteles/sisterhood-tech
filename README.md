@@ -128,7 +128,7 @@ $ npm start
 ## :books: Documentação da API
 <br>
 
-:memo: [Swagger](https://sisterhood-tech.onrender.com/my-documentation-route/)
+:memo: [Swagger](https://sisterhood-tech.onrender.com/my-documentation-route/) <br>
 :rocket: [Render](https://sisterhood-tech.onrender.com)
 
 ---
