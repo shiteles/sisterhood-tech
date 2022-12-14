@@ -173,9 +173,9 @@ $ npm start
 
 Agradeço a tech lead incrivel [May](https://www.linkedin.com/in/mayhhara-morais-78040a200/) sempre muito disposta a ajudar, a facilitadora da On19 [Jani](https://www.linkedin.com/in/janiarli/) pelo cuidado e carinho ao longo desses meses, a todas as professoras que dedicaram tempo e compartilharam tanto conhecimento conosco, [Loui](https://www.linkedin.com/in/loui-costa/), [Agnes](https://www.linkedin.com/in/agnes-ign%C3%A1cio-a07762125/), [Giu](https://www.linkedin.com/in/giuzambot/), [Bia](https://www.linkedin.com/in/beatriz-ramerindo/), [Suzik](https://www.linkedin.com/in/manuellysuzik/), [Gaia](https://www.linkedin.com/in/gaia-maria/), [Tereza](https://www.linkedin.com/in/tereza-oliveira/), vocês estão mudando vidas, e serei eternamente grata a cada uma. A todos os momentos compartilhados com a [Ju](https://www.linkedin.com/in/julianasouzafarias/), as minhas terças nunca mais serão as mesmas. A [Letícia](https://www.linkedin.com/in/let%C3%ADcia-rodrigues-dos-santos/) e a [Raissa](https://www.linkedin.com/in/raissa-emanueli-%F0%9F%8F%B3%EF%B8%8F%E2%80%8D%F0%9F%8C%88-5979b0205/), quero agradecer pelas dicas maravilhosas.<br>
 E não poderia deixar de agradecer a cada mulher da On19, encontrei apoio, aprendi com vocês e pude me ver em cada uma, mulheres inteligentes, resilientes e que tem um futuro incrível. <br>
- Posso dizer que fiz amizades que vou levar para a vida em especial Maria, Lilia e Cibelle, obrigada por tudo que compartilhamos vocês são especiais demais pra mim.<br>
- Minha família é meu porto seguro e só eles sabem o quanto me dediquei durante esse período, mãe, Dika, Wilson, o responsavel por me incentivar a fazer essa transição de carreira, e a Reprograma reforçou e me fez ver que é possível.
- PS: Meu pai com certeza esta orgulhoso :heart:
+Posso dizer que fiz amizades que vou levar para a vida em especial [Maria](https://www.linkedin.com/in/maria-thays-bb1902152/), [Lilia](https://www.linkedin.com/in/liliaferreira/) e [Cibelle](https://www.linkedin.com/in/cibellesena/), obrigada por tudo que compartilhamos vocês são especiais demais pra mim.<br>
+Minha família é meu porto seguro e só eles sabem o quanto me dediquei durante esse período, mãe, Dika, Wilson, o responsavel por me incentivar a fazer essa transição de carreira, e a Reprograma reforçou e me fez ver que é possível.
+PS: Meu pai com certeza esta orgulhoso :heart:
 <br>
 
 ---
