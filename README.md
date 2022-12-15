@@ -151,7 +151,7 @@ $ npm start
 | DELETE | /sisterhoodtech/mentee/delete/:id  | Remove uma mentorada                    |   200  |  ✔️  |
 
 <br />
-<p align="center"> <img src="https://github.com/shiteles/sisterhood-tech/blob/main/material/menteeRoutes.gif"  width ="50%"> </p>
+<p align="center"> <img src="https://github.com/shiteles/sisterhood-tech/blob/main/material/menteeRoutes.gif"  width ="100%"> </p>
 <br />
 
 - **Mentor**
@@ -168,7 +168,7 @@ $ npm start
 <br>
 
 <br />
-<p align="center"> <img src="https://github.com/shiteles/sisterhood-tech/blob/main/material/mentorRoutes.gif"  width ="50%"> </p>
+<p align="center"> <img src="https://github.com/shiteles/sisterhood-tech/blob/main/material/mentorRoutes.gif"  width ="100%"> </p>
 <br />
 
  :lock: **PROTEÇÃO** Para testar via Postman, é necesário realizar login para ter acesso ao token e passar no header para autenticação.
