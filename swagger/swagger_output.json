@@ -5,7 +5,7 @@
     "title": "REST API",
     "description": ""
   },
-  "host": "https://sisterhood-tech.onrender.com",
+  "host": "sisterhood-tech.onrender.com",
   "basePath": "/",
   "schemes": [
     "http"
