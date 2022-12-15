@@ -5,7 +5,7 @@
     "title": "REST API",
     "description": ""
   },
-  "host": "localhost:3000",
+  "host": "https://sisterhood-tech.onrender.com",
   "basePath": "/",
   "schemes": [
     "http"
