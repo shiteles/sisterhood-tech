@@ -138,7 +138,7 @@ $ npm start
 
  🛣️ Todas as rotas existentes neste projeto:
 
-- Mentee
+- **Mentee**
 
 | Verbo  |   EndPoint                         |        Descrição da Rota                | Status | Auth |
 |--------|------------------------------------|-----------------------------------------|--------|------|
@@ -150,7 +150,11 @@ $ npm start
 | PATCH  | /sisterhoodtech/mentee/:id         | Altera as informações de uma mentorada  |   200  |  ✔️  |
 | DELETE | /sisterhoodtech/mentee/delete/:id  | Remove uma mentorada                    |   200  |  ✔️  |
 
-- Mentor
+<br />
+<p align="center"> <img src="https://github.com/shiteles/sisterhood-tech/blob/main/material/menteeRoutes.gif"  width ="50%"> </p>
+<br />
+
+- **Mentor**
 
 | Verbo  |   EndPoint                         |        Descrição da Rota                | Status | Auth |
 |--------|------------------------------------|-----------------------------------------|--------|------|
@@ -162,6 +166,10 @@ $ npm start
 | PATCH  | /sisterhoodtech/mentor/:id         | Altera as informações de uma mentora    |   200  |  ✔️  |
 | DELETE | /sisterhoodtech/mentor/delete/:id  | Remove uma mentora                      |   200  |  ✔️  |
 <br>
+
+<br />
+<p align="center"> <img src="https://github.com/shiteles/sisterhood-tech/blob/main/material/mentorRoutes.gif"  width ="50%"> </p>
+<br />
 
  :lock: **PROTEÇÃO** Para testar via Postman, é necesário realizar login para ter acesso ao token e passar no header para autenticação.
 
