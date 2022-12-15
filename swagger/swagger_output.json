@@ -8,7 +8,7 @@
   "host": "sisterhood-tech.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http"
+    "http","https"
   ],
   "paths": {
     "/": {
